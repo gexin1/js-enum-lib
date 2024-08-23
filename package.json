@@ -1,6 +1,6 @@
 {
-  "name": "@kainstar/typescript-npm-package-template",
-  "version": "1.2.0",
+  "name": "js-enum-lib",
+  "version": "0.0.1",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "sideEffects": false,
   "type": "module",
@@ -21,7 +21,7 @@
     "build": "tsup",
     "cm": "cz",
     "clean": "rimraf lib",
-    "lint": "eslint src",
+    "lint": "eslint .",
     "prepare": "is-ci || husky",
     "semantic-release": "semantic-release",
     "test": "vitest run --coverage"
@@ -53,7 +53,6 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
-    "@kainstar/eslint-config": "^1.1.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^12.0.0",
     "@semantic-release/git": "^10.0.1",
@@ -64,7 +63,9 @@
     "@vitest/coverage-v8": "^1.4.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "npm:eslint-ts-patch@8.56.0-0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "eslint-ts-patch": "8.57.0-0",
     "husky": "^9.0.11",
     "is-ci": "^3.0.1",
