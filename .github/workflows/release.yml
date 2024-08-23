@@ -10,21 +10,17 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
+          cache: npm
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Test
-        run: pnpm run --if-present test
+        run: npm test
       - name: Build
-        run: pnpm run build
+        run: npm run build
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
