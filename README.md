@@ -107,10 +107,10 @@ const value = enumify.getValue('KEY');
 
 [build-img]: https://github.com/gexin1/js-enum-lib/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/gexin1/js-enum-lib/actions/workflows/release.yml
-[downloads-img]: https://img.shields.io/npm/dt/@gexin1/js-enum-lib
-[downloads-url]: https://www.npmtrends.com/@gexin1/js-enum-lib
-[npm-img]: https://img.shields.io/npm/v/@gexin1/js-enum-lib
-[npm-url]: https://www.npmjs.com/package/@gexin1/js-enum-lib
+[downloads-img]: https://img.shields.io/npm/dt/js-enum-lib
+[downloads-url]: https://www.npmtrends.com/js-enum-lib
+[npm-img]: https://img.shields.io/npm/v/js-enum-lib
+[npm-url]: https://www.npmjs.com/package/js-enum-lib
 [issues-img]: https://img.shields.io/github/issues/gexin1/js-enum-lib
 [issues-url]: https://github.com/gexin1/js-enum-lib/issues
 [codecov-img]: https://codecov.io/gh/gexin1/js-enum-lib/branch/main/graph/badge.svg
