@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/gexin1/js-enum-lib/compare/v1.0.0...v1.1.0) (2024-08-26)
+
+
+### Features
+
+* 增加枚举value类型为泛型,增加清除所有枚举的类型 ([70ee0a9](https://github.com/gexin1/js-enum-lib/commit/70ee0a9516aa8d84f0a0aea8471b9ecc4d9944fc))
+
 ## 1.0.0 (2024-08-23)
 
 
