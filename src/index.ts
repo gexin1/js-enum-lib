@@ -1,20 +1,20 @@
-type EnumItem = {
+type EnumItem<T = number | string> = {
   key: string;
   label: string;
-  value: number | string;
+  value: T;
 };
 
-type EnumValues = Record<string, EnumItem>;
+type EnumValues<T = number | string> = Record<string, EnumItem<T>>;
 
-export class Enumify {
-  private values: EnumValues;
+export class Enumify<T = number | string> {
+  private values: EnumValues<T>;
 
-  constructor(defaultValue: EnumValues = {}) {
+  constructor(defaultValue: EnumValues<T> = {}) {
     this.values = defaultValue;
   }
 
   // 添加枚举项
-  add(key: string, label: string, value: number | string): void {
+  add(key: string, label: string, value: T): void {
     if (!key || this.values[key]) {
       console.error(`Key "${key}" is either empty or already exists.`);
       return;
@@ -31,13 +31,18 @@ export class Enumify {
     }
   }
 
+  // 清空枚举值
+  removeAll(): void {
+    this.values = {};
+  }
+
   // 获取枚举项
-  get(key: string): EnumItem | undefined {
+  get(key: string): EnumItem<T> | undefined {
     return this.values[key];
   }
 
   // 获取所有枚举项
-  getAll(): EnumItem[] {
+  getAll(): EnumItem<T>[] {
     return Object.values(this.values);
   }
 
@@ -47,7 +52,7 @@ export class Enumify {
   }
 
   // 根据 key 获取 value
-  getValue(key: string): number | string | undefined {
+  getValue(key: string): T | undefined {
     return this.values[key]?.value;
   }
 }

@@ -26,9 +26,9 @@ console.log(colorEnum.getLabel('GREEN')); // 获取标签
 console.log(colorEnum.getValue('RED')); // 获取值
 
 colorEnum.remove('RED'); // 删除枚举项
+colorEnum.removeAll(); // 清空枚举项
 console.log(colorEnum.getAll()); // 查看删除后的结果
 ```
-
 
 # Enumify
 
@@ -41,7 +41,6 @@ console.log(colorEnum.getAll()); // 查看删除后的结果
 ```typescript
 const enumify = new Enumify();
 ```
-
 
 ### 添加枚举项
 
@@ -64,6 +63,12 @@ enumify.remove('KEY');
 **参数：**
 
 - `key`: 要删除的枚举项的键
+
+### 清空枚举项
+
+```typescript
+enumify.removeAll();
+```
 
 ### 获取枚举项
 
