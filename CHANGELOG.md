@@ -1,3 +1,19 @@
+## [1.2.0](https://github.com/gexin1/js-enum-lib/compare/v1.1.0...v1.2.0) (2024-09-20)
+
+
+### Features
+
+* 支持打包到es5版本 ([e23cf8d](https://github.com/gexin1/js-enum-lib/commit/e23cf8da381a4add7c9d2dfee4d419bd40a843e5))
+* 解决冲突 ([9d2dfb1](https://github.com/gexin1/js-enum-lib/commit/9d2dfb1618dd98f015f3425ad6111b1d1acf8c93))
+
+
+### Bug Fixes
+
+* 不要遵循npm lock文件 ([a1831a2](https://github.com/gexin1/js-enum-lib/commit/a1831a2d7b7e6092def2b2274b0c0ef00bfe005e))
+* 代码安装依赖 ([72ebbcc](https://github.com/gexin1/js-enum-lib/commit/72ebbccbbe180e6723ba1daeff814264b0434af0))
+* 修改lock文件 ([77e9231](https://github.com/gexin1/js-enum-lib/commit/77e9231632703c2778994aeb88a62caeca163726))
+* 删除lock文件 ([9db9907](https://github.com/gexin1/js-enum-lib/commit/9db99076ab0c1f3ea9a9f609849f148f7855f9bb))
+
 ## [1.1.0](https://github.com/gexin1/js-enum-lib/compare/v1.0.0...v1.1.0) (2024-08-26)
 
 
