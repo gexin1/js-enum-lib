@@ -1,6 +1,6 @@
 {
   "name": "js-enum-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "javascript enum",
   "sideEffects": false,
   "type": "module",
@@ -49,6 +49,9 @@
     "url": "https://github.com/gexin1/js-enum-lib/issues"
   },
   "homepage": "https://github.com/gexin1/js-enum-lib",
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "*"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
