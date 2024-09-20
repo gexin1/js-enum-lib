@@ -7,4 +7,5 @@ export default defineConfig({
   clean: true,
   dts: true,
   silent: true,
+  target: 'es5',            // 将目标版本设置为 ES5
 });
