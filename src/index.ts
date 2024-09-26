@@ -55,4 +55,26 @@ export class Enumify<T = number | string> {
   getValue(key: string): T | undefined {
     return this.values[key]?.value;
   }
+
+  // 根据 label 获取 value
+  getValueByLabel(label: string): T | undefined {
+    for (const key in this.values) {
+      if (this.values[key].label === label) {
+        return this.values[key].value;
+      }
+    }
+    console.error(`Label "${label}" does not exist.`);
+    return undefined;
+  }
+
+  // 根据 value 获取 label
+  getLabelByValue(value: T): string | undefined {
+    for (const key in this.values) {
+      if (this.values[key].value === value) {
+        return this.values[key].label;
+      }
+    }
+    console.error(`Value "${value}" does not exist.`);
+    return undefined;
+  }
 }

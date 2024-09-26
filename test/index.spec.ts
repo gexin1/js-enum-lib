@@ -96,4 +96,43 @@ describe('Enumify', () => {
     const value = enumify.getValue('NON_EXISTENT');
     expect(value).toBeUndefined();
   });
+
+  // 新增：通过 label 获取 value
+  it('should get value by label', () => {
+    enumify.add('APPLE', '🍎', 1);
+    enumify.add('PINEAPPLE', '🍍', 3);
+    const value = enumify.getValueByLabel('🍍');
+    expect(value).toBe(3);
+  });
+
+  // 新增：尝试通过不存在的 label 获取 value 时返回 undefined
+  it('should return undefined for non-existent label when getting value', () => {
+    enumify.add('APPLE', '🍎', 1);
+    const value = enumify.getValueByLabel('NON_EXISTENT_LABEL');
+    expect(value).toBeUndefined();
+  });
+
+  // 测试通过 value 获取 label
+  it('should get label by value', () => {
+    enumify.add('APPLE', '🍎', 1);
+    enumify.add('PINEAPPLE', '🍍', 3);
+    const label = enumify.getLabelByValue(3);
+    expect(label).toBe('🍍');
+  });
+
+  // 测试通过不存在的 value 获取 label 时返回 undefined
+  it('should return undefined for non-existent value when getting label', () => {
+    enumify.add('APPLE', '🍎', 1);
+    const label = enumify.getLabelByValue(999); // 不存在的 value
+    expect(label).toBeUndefined();
+  });
+
+  // 测试通过不存在的 value 获取 label 时日志输出
+  it('should log an error when trying to get label by non-existent value', () => {
+    const consoleSpy = vi.spyOn(console, 'error');
+    enumify.add('APPLE', '🍎', 1);
+    enumify.getLabelByValue(999); // 不存在的 value
+    expect(consoleSpy).toHaveBeenCalledWith('Value "999" does not exist.');
+    consoleSpy.mockRestore();
+  });
 });
