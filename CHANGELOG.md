@@ -1,3 +1,16 @@
+## [1.3.0](https://github.com/gexin1/js-enum-lib/compare/v1.2.0...v1.3.0) (2024-09-26)
+
+
+### Features
+
+* 增加新的方法 ([db26fe2](https://github.com/gexin1/js-enum-lib/commit/db26fe2e3a2f0e98c03e2ac710e6d853df5c6452))
+
+
+### Bug Fixes
+
+* swc error ([9a11dc1](https://github.com/gexin1/js-enum-lib/commit/9a11dc169d5be0434c9ae1c6abe21a8914ea90be))
+* 修改版本号 ([73955e3](https://github.com/gexin1/js-enum-lib/commit/73955e30f4ef3995ac87c733b1c700326a16252e))
+
 ## [1.2.0](https://github.com/gexin1/js-enum-lib/compare/v1.1.0...v1.2.0) (2024-09-20)
 
 
